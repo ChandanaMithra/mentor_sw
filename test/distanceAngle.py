@@ -7,6 +7,5 @@ def getDistanceAngle(sourceX1,sourceY1,destX2,destY2):
     Ax,Ay= destX2-sourceX1, destY2-sourceY1
     angleInRad= math.atan2(Ay,Ax)
     angleInDeg= int(57.2958*angleInRad)
-    print("distance in inches=",dist)
-    print("angle in degrees=", angleInDeg)
+    return dist,angleInDeg
 getDistanceAngle(1,1,2,2)
